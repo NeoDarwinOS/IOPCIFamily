@@ -519,5 +519,24 @@ struct IOPCIDiagnosticsParameters
 };
 typedef struct IOPCIDiagnosticsParameters IOPCIDiagnosticsParameters;
 
+enum
+{
+    kIOPCIClassBridge           = 0x06,
+    kIOPCIClassNetwork          = 0x02,
+    kIOPCIClassGraphics         = 0x03,
+    kIOPCIClassMultimedia       = 0x04,
+
+    kIOPCISubClassBridgeHost    = 0x00,
+    kIOPCISubClassBridgeISA     = 0x01,
+    kIOPCISubClassBridgeEISA    = 0x02,
+    kIOPCISubClassBridgeMCA     = 0x03,
+    kIOPCISubClassBridgePCI     = 0x04,
+    kIOPCISubClassBridgePCMCIA  = 0x05,
+    kIOPCISubClassBridgeNuBus   = 0x06,
+    kIOPCISubClassBridgeCardBus = 0x07,
+    kIOPCISubClassBridgeRaceWay = 0x08,
+    kIOPCISubClassBridgeOther   = 0x80,
+};
+
 #endif /* ! _IOKIT_IOPCIPRIVATE_H */
 

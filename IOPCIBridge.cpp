@@ -67,25 +67,6 @@ extern "C"
 // #define DEADTEST		"UPS0"
 // #define DEFERTEST	1
 
-enum
-{
-    kIOPCIClassBridge           = 0x06,
-    kIOPCIClassNetwork          = 0x02,
-    kIOPCIClassGraphics         = 0x03,
-    kIOPCIClassMultimedia       = 0x04,
-
-    kIOPCISubClassBridgeHost    = 0x00,
-    kIOPCISubClassBridgeISA     = 0x01,
-    kIOPCISubClassBridgeEISA    = 0x02,
-    kIOPCISubClassBridgeMCA     = 0x03,
-    kIOPCISubClassBridgePCI     = 0x04,
-    kIOPCISubClassBridgePCMCIA  = 0x05,
-    kIOPCISubClassBridgeNuBus   = 0x06,
-    kIOPCISubClassBridgeCardBus = 0x07,
-    kIOPCISubClassBridgeRaceWay = 0x08,
-    kIOPCISubClassBridgeOther   = 0x80,
-};
-
 enum { kAERISRNum     = 4 };
 enum { kIOPCIEventNum = 8 };
 
@@ -93,7 +74,7 @@ enum { kIOPCIEventNum = 8 };
 
 const IORegistryPlane * gIOPCIACPIPlane;
 
-static class IOPCIMessagedInterruptController  * gIOPCIMessagedInterruptController;
+extern class IOPCIMessagedInterruptController  * gIOPCIMessagedInterruptController;
 
 static IOSimpleLock *      gIOPCIEventSourceLock;
 static queue_head_t        gIOPCIEventSourceQueue;
@@ -201,7 +182,7 @@ struct IOPCIAERRoot
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #undef super
-#include "vtd.c"
+#include "AppleVTD.h"
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 

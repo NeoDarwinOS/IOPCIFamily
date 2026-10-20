@@ -89,6 +89,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		4230744630876EBB00E7371E /* AppleVTD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4230744430876EBB00E7371E /* AppleVTD.cpp */; };
+		4230744730876EBB00E7371E /* AppleVTD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4230744530876EBB00E7371E /* AppleVTD.h */; };
+		4230744B3087754900E7371E /* IOx86Mapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 423074493087754900E7371E /* IOx86Mapper.cpp */; };
+		4230744C3087754900E7371E /* IOx86Mapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4230744A3087754900E7371E /* IOx86Mapper.h */; };
 		9807B1EA2367CA7E005B29F6 /* driverKit.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9807B1E92367CA7E005B29F6 /* driverKit.xcconfig */; };
 		9831214723A09E550043A189 /* PEX8733Definitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9831214623A09E550043A189 /* PEX8733Definitions.h */; };
 		984A9E06235D1E9900EFD510 /* IOPCIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 984A9E05235D1E9900EFD510 /* IOPCIDevice.cpp */; };
@@ -211,6 +215,10 @@
 		4094C51900CEE7A80ACA2928 /* IOPCIBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIBridge.cpp; sourceTree = "<group>"; };
 		4094C51A00CEE7A80ACA2928 /* IOPCIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDevice.cpp; sourceTree = "<group>"; };
 		4094C51B00CEE7A80ACA2928 /* IOPCIDeviceI386.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDeviceI386.cpp; sourceTree = "<group>"; };
+		4230744430876EBB00E7371E /* AppleVTD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleVTD.cpp; sourceTree = "<group>"; };
+		4230744530876EBB00E7371E /* AppleVTD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleVTD.h; sourceTree = "<group>"; };
+		423074493087754900E7371E /* IOx86Mapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOx86Mapper.cpp; sourceTree = "<group>"; };
+		4230744A3087754900E7371E /* IOx86Mapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOx86Mapper.h; sourceTree = "<group>"; };
 		9807B1E92367CA7E005B29F6 /* driverKit.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = driverKit.xcconfig; sourceTree = "<group>"; };
 		9831214623A09E550043A189 /* PEX8733Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEX8733Definitions.h; sourceTree = "<group>"; };
 		984A9E05235D1E9900EFD510 /* IOPCIDevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDevice.cpp; sourceTree = "<group>"; };
@@ -328,6 +336,10 @@
 				4094C51A00CEE7A80ACA2928 /* IOPCIDevice.cpp */,
 				4094C51B00CEE7A80ACA2928 /* IOPCIDeviceI386.cpp */,
 				A655D6E40E4BB51D00550BCC /* IOPCIDeviceMappedIO.cpp */,
+				4230744430876EBB00E7371E /* AppleVTD.cpp */,
+				4230744530876EBB00E7371E /* AppleVTD.h */,
+				423074493087754900E7371E /* IOx86Mapper.cpp */,
+				4230744A3087754900E7371E /* IOx86Mapper.h */,
 				03DB1082033AA50A03CA2A5F /* IOKit */,
 			);
 			name = Source;
@@ -421,7 +433,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9874FC55234E9EE300096401 /* IOPCIDevice.h in Headers */,
+				4230744C3087754900E7371E /* IOx86Mapper.h in Headers */,
 				9874FC54234E9ED900096401 /* IOPCIBridge.h in Headers */,
+				4230744730876EBB00E7371E /* AppleVTD.h in Headers */,
 				98B353A6235E950200CFFDBC /* IOPCIFamilyDefinitions.h in Headers */,
 				9874FC53234E9ECB00096401 /* IOAGPDevice.h in Headers */,
 				A613B27C0D46AA65007BA726 /* IOPCIConfigurator.h in Headers */,
@@ -749,6 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A613B2800D46AA65007BA726 /* IOPCIBridge.cpp in Sources */,
+				4230744B3087754900E7371E /* IOx86Mapper.cpp in Sources */,
 				A613B2810D46AA65007BA726 /* IOPCIDevice.cpp in Sources */,
 				984D5C572361662C0073E2CD /* IOPCIDevice.iig in Sources */,
 				A613B2820D46AA65007BA726 /* IOPCIDeviceI386.cpp in Sources */,
@@ -756,6 +771,7 @@
 				A655D6E50E4BB51D00550BCC /* IOPCIDeviceMappedIO.cpp in Sources */,
 				A6849D13126539090033F95C /* IOPCIRange.cpp in Sources */,
 				B1BA52AC15DF1B1A00C147D3 /* IOPCIMessagedInterruptController.cpp in Sources */,
+				4230744630876EBB00E7371E /* AppleVTD.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
